@@ -19,6 +19,34 @@ if (isset($_POST['submit'])) {
     $stmt->close();
   }
 
+  /*
+  
+  stmt - short for statement.
+  $stmt->bind_param("sss", $name, $email, $feedback); - a type definition string that tells MySQLi what types of variables you’re binding to the SQL query.
+
+  Each character corresponds to one parameter and its data type:
+
+  s = string
+
+  i = integer
+
+  d = double (floating point number)
+
+  b = blob (binary data)
+
+  If you had a query like:
+
+
+$stmt = $conn->prepare("INSERT INTO users (name, age, balance) VALUES (?, ?, ?)");
+$stmt->bind_param("sid", $name, $age, $balance);
+"s" for $name (string)
+
+"i" for $age (integer)
+
+"d" for $balance (double/float)
+  
+  */
+
 }
 
 

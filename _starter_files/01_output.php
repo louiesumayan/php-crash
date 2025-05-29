@@ -1,6 +1,19 @@
 <?php
-/* -------- Output & Comments ------- */
 
-/*
-  A .php file running on a server, can output both HTML and PHP code. There are multiple functions that can be used to output data to the browser.
-*/
+print_r([1, 2, 3, 4, 5]);
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1><?php echo 'POST ONE'; ?></h1>
+</body>
+
+</html>
